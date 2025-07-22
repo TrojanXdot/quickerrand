@@ -128,14 +128,11 @@ p {
   top: -150px; /* move down */
   left: 0%; /* move right*/
 }
-br {
-  font-style: italic;
-}
 @media screen and (max-width: 768px) {
   .main-container {
     padding: 30px;
     text-align: center;
-    height: 180vh;
+    height: 160vh;
   }
   .landing h1 {
     font-size: 1.2rem;
@@ -176,7 +173,7 @@ br {
   }
   .contact-btn {
     position: relative;
-    top: -10%; /* move down */
+    top: 40px; /* move down */
   left: 0%; /* move right*/
   }
 }
