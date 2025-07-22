@@ -17,24 +17,48 @@
  <p>...your one-stop errands & delivery Hub.</p>
   <div class="action-section">
     <a
-    href="#" class="action-btn">
+    href="#" class="action-btn"onclick="openOrderForm()">
     <img src="order.png" class="btn-icon">order
     </a>
     <a
-    href="#" class="action-btn">
+    href="#" class="action-btn"onclick="openPickupForm()">
   <img src="pickup.png" class="btn-icon">Pickup
   </a>
   <a
-  href="#" class="action-btn">
+  href="#" class="action-btn"onclick="openDeliveryForm()">
 <img src="deli.png" class="btn-icon">Delivery
 </a>
-<a href="#" target="_blank" class="contact-btn">
+<a href="https://wa.me/2349113121784" target="_blank" class="contact-btn">
   <img src="contact.png" style="width: 40px;">
 </a>
       </div>
     </div>
   </div>
-    
+<div id="formPopup" class="form-popup">
+  <form id="successForm" class="form-container" action="https://formspree.io/f/xkgzjojg" method="POST">
+    <h2 id="formTitle">Place Your Order</h2>
+
+    <input type="hidden" name="request_type" id="requestType" value="Order">
+
+    <input type="text" name="name" id="nameField" placeholder="Your Name" required />
+
+    <input type="text" name="order_details" id="orderDetails" placeholder="Item" />
+
+    <input type="text" name="pickup_address" id="pickupAddress" placeholder="Pickup Address" />
+
+    <input type="text" name="your_address" id="yourAddress" placeholder="Your Address" />
+
+    <input type="text" name="delivery_address" id="deliveryAddress" placeholder="Delivery Address" />
+
+    <input type="tel" name="phone" id="phoneField" placeholder="Phone Number" required />
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+  <div id="formSuccess" class="form-success">
+    Your order was submitted successfully!
+  </div>
+</div>
   <script src="script.js"></script>
 </body>
 </html>

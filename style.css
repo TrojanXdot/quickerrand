@@ -184,3 +184,52 @@ p {
   left: 0%; /* move right*/
   }
 }
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #ccc;
+  z-index: 999;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-container input[type="text"],
+.form-container input[type="tel"] {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-container .btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f1681d;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-container .btn.cancel {
+  background-color: #ccc;
+  color: black;
+}
+
+.form-container .btn:hover {
+  opacity: 0.9;
+}
+.form-success {
+  display: none;
+  color: green;
+  margin-top: 10px;
+  font-family: 'poppins' sans-serif;
+  font-style: italic;
+}
