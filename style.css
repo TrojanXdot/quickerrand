@@ -135,6 +135,12 @@ p {
     text-align: center;
     min-height: auto;
   }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h4 {
+      font-family: 'poppins' sans-serif;
+    }
   .landing h1 {
     font-size: 1.2rem;
     position: relative;
