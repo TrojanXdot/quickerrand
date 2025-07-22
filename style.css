@@ -28,6 +28,7 @@ h1 {
   position: relative;
   top: -40px; /*move down*/
   left: -90px; /*move down*/
+  white-space: nowrap;
 }
 .highlight {
   color: #f1681d;
