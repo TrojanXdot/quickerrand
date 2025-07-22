@@ -7,25 +7,27 @@ body {
   transform: scale(1.0);
   transform-origin: top center;
   font-family: 'poppins',sans-serif;
-  margin: 10px;
+  margin: 0;
   padding: 0;
   background: #f7e1c0;
   text-align: center;
   padding: 30px 10px;
-  @media (max-width: 768px) {
-    h1 { font-size: 1.8rem;}
-    p {font-size: 0.9rem;}
+  height: 100vh;
+  box-sizing: border-box;
+
   }
-}
 h1 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: -20px;
   margin-top: 60px;
   text-align: left;
   color: rgb(13, 20, 29);
   padding: 0;
   margin-left: 150px;
+  position: relative;
+  top: -40px; /*move down*/
+  left: -90px; /*move down*/
 }
 .highlight {
   color: #f1681d;
@@ -56,7 +58,14 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgb(0,0,0,0.2);
+  position: relative;
+  top: -150px; /* move down */
+  left: 0%; /* move right*/
 }
+  .action-btn img {
+    position: static; /* resets any movement*/
+
+  }
 .action-btn:hover {
   background-color: #9b3107;
 }
@@ -65,10 +74,9 @@ h1 {
   height: 24px;
 }
 .contact-btn {
-  position: fixed;
-  bottom: -135px;
-  right: 150px;
-  z-index: 1000;
+  position: relative;
+  top: -150px; /* move down */
+  left: 20%; /* move right*/
 }
 .contact-btn img {
   width: auto;
@@ -77,6 +85,7 @@ h1 {
   box-shadow: 0 4px 10px rgb(0,0,0,0.3);
   transition: transforn 0.3s ease;
   background-color: #f1681d;
+  position: static; /* resets any movement */
 }
 .contact-btn img:hover {
   transform: scale(1.1);
@@ -90,11 +99,15 @@ h1 {
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   max-width: 100%;
   margin: 60px auto;
-  width: 90%;
+  width: 85%;
+  height: 80vh;
 }
 img {
-  width: 210px;
+  width: 200px;
   height: auto;
+  position: relative;
+  top: -99px; /* move down */
+  left: -60px; /*move right */
 }
 h4 {
   text-align: left;
@@ -104,8 +117,66 @@ h4 {
   color: rgb(13, 20, 29);
   font-style: italic;
   font-family: cursive;
+  position: relative;
+  top: -90%; /* move down */
+  left: -10%; /* move right*/
 }
 p {
-  font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  top: -150px; /* move down */
+  left: 0%; /* move right*/
+}
+br {
+  font-style: italic;
+}
+@media screen and (max-width: 768px) {
+  .main-container {
+    padding: 30px;
+    text-align: center;
+    height: 180vh;
+  }
+  .landing h1 {
+    font-size: 1.2rem;
+    position: relative;
+    top: -50px; /* move down */
+  left: -37%; /* move right*/
+  }
+  .landing h4 {
+    font-size: 1rem;
+    position: relative;
+    top: -30px; /* move down */
+  left: -34%; /* move right*/
+  }
+  .landing p {
+    font-size: 0.8rem;
+    position: relative;
+    top: 10px; /* move down */
+  left: 0%; /* move right*/
+  }
+  .btn-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .action-btn {
+    display: inline-block;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    top: 3px; /* move down */
+  left: 0%; /* move right*/
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 0; /* move down */
+  left: -10%; /* move right*/
+  }
+  .contact-btn {
+    position: relative;
+    top: -10%; /* move down */
+  left: 0%; /* move right*/
+  }
 }
