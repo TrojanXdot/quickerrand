@@ -26,8 +26,8 @@ h1 {
   padding: 0;
   margin-left: 150px;
   position: relative;
-  top: -40px; /*move down*/
-  left: -90px; /*move down*/
+  top: -40px;
+  left: -90px;
   white-space: nowrap;
 }
 .highlight {
@@ -60,11 +60,11 @@ h1 {
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgb(0,0,0,0.2);
   position: relative;
-  top: -150px; /* move down */
-  left: 0%; /* move right*/
+  top: -150px;
+  left: 0%;
 }
   .action-btn img {
-    position: static; /* resets any movement*/
+    position: static;
 
   }
 .action-btn:hover {
@@ -76,8 +76,8 @@ h1 {
 }
 .contact-btn {
   position: relative;
-  top: -150px; /* move down */
-  left: 20%; /* move right*/
+  top: -150px;
+  left: 20%;
 }
 .contact-btn img {
   width: auto;
@@ -86,7 +86,7 @@ h1 {
   box-shadow: 0 4px 10px rgb(0,0,0,0.3);
   transition: transforn 0.3s ease;
   background-color: #f1681d;
-  position: static; /* resets any movement */
+  position: static;
 }
 .contact-btn img:hover {
   transform: scale(1.1);
@@ -107,8 +107,8 @@ img {
   max-width: 200px;
   height: auto;
   position: relative;
-  top: -99px; /* move down */
-  left: -60px; /*move right */
+  top: -99px;
+  left: -60px;
 }
 h4 {
   text-align: left;
@@ -119,15 +119,15 @@ h4 {
   font-style: italic;
   font-family: cursive;
   position: relative;
-  top: -90%; /* move down */
-  left: -10%; /* move right*/
+  top: -90%;
+  left: -10%;
 }
 p {
   font-size: 16px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: relative;
-  top: -150px; /* move down */
-  left: 0%; /* move right*/
+  top: -150px;
+  left: 0%;
 }
 @media screen and (max-width: 768px) {
   .main-container {
@@ -144,20 +144,20 @@ p {
   .landing h1 {
     font-size: 1.2rem;
     position: relative;
-    top: -50px; /* move down */
-  left: -37%; /* move right*/
+    top: -50px;
+  left: -37%;
   }
   .landing h4 {
     font-size: 1rem;
     position: relative;
-    top: -30px; /* move down */
-  left: -34%; /* move right*/
+    top: -30px;
+  left: -34%;
   }
   .landing p {
     font-size: 0.8rem;
     position: relative;
-    top: 10px; /* move down */
-  left: 0%; /* move right*/
+    top: 10px;
+  left: 0%;
   }
   .btn-icon {
     width: 50px;
@@ -168,20 +168,20 @@ p {
     font-size: 14px;
     width: 100%;
     position: relative;
-    top: 3px; /* move down */
-  left: 0%; /* move right*/
+    top: 3px;
+  left: 0%;
   }
   img {
     max-width: 100%;
     height: auto;
     position: relative;
-    top: 0; /* move down */
-  left: -10%; /* move right*/
+    top: 0;
+  left: -10%;
   }
   .contact-btn {
     position: relative;
-    top: 20px; /* move down */
-  left: 0%; /* move right*/
+    top: 20px;
+  left: 0%;
   }
 }
 .form-popup {

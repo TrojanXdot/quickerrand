@@ -36,7 +36,6 @@ function openPickupForm() {
 document.getElementById("pickupAddress").required = true;
 document.getElementById("deliveryAddress").required = true;
 document.getElementById("yourAddress").required = false;
-
 }
 
 function openDeliveryForm() {
@@ -52,7 +51,6 @@ function openDeliveryForm() {
 document.getElementById("deliveryAddress").required = true;
 document.getElementById("orderDetails").required = false;
 document.getElementById("pickupAddress").required = false;
-
 }
 
 function closeForm() {
@@ -60,8 +58,7 @@ function closeForm() {
 }
 document.getElementById("successForm").addEventListener("submit", function (e) {
   e.preventDefault();
-
-  const form = e.target;
+const form = e.target;
   const data = new FormData(form);
 
   fetch("https://formspree.io/f/xkgzjojg", {
